@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Name: Connor Waters
+Date created: 10/26/2019
+Most recent revision: 10/26/2019
+-->
+<html>
+	<head>
+		<title> Lucky Sevens </title>
+		
+		<style> 
+			h1 {
+				text-align: center;
+			}
+			section {
+				text-align: center;
+			}
+			table{
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+		<script type="text/JavaScript" src="scripts/luckySevens.js"></script> 
+	</head>
+	<body>
+		<h1> Lucky Sevens </h1>
+		<section>
+			<form name="form" >
+				<label for="Bet">Starting Bet: </label>
+				<input type="text" id="bet" name="Bet"> <br />
+			</form>
+			<button type="button" onclick="play(getBet());">Play</button>
+		</section>
+	</body>
+</html>

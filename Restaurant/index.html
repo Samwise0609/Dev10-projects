@@ -2,11 +2,25 @@
 <!--
 Name: Connor Waters
 Date created: 10/19/2019
-Most recent revision: 10/19/2019
+Most recent revision: 10/26/2019
 -->
 <html>
 	<head>
 		<title> Burger Castle </title>
+		<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<noscript>This website is best experienced with JavaScript enabled.</noscript>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css"/>
+		
+		<style>
+			section {
+				background-color: #ffe113;
+			}
+			.card {
+				height: 100px;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -15,29 +29,82 @@ Most recent revision: 10/19/2019
 		
 		<nav>
 			<hr />
-				<a href="index.html">Home</a>
-				<a href="menu.html">Menu</a>
-				<a href="contact.html">Contact Us</a>
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link active" href="index.html">
+							<i class="material-icons">home</i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="menu.html">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact Us</a>
+					</li>
+				</ul>
 			<hr />
 		</nav>
-		
 		<section>
-			<article id="image">
-				
+			<article class="jumbotron">
+				<h2 class="display-5">A New Location!</h2>
+				<p> We're opening a new location in the Raleigh-Durham area in the new year, be on the lookout! </p>
 			</article>
 			
-			<article id="description">
-				<h3> Restaurant Description </h3>
-				<p>
-					
-				</p>
+			<div class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="card bg-warning mx-auto w-75">
+							<div class="card-body text-center">
+								<h4 class="card-text">We're opening a new location!</h4>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card bg-warning mx-auto w-75">
+							<div class="card-body text-center">
+								<h4 class="card-text">We're rolling out our seasonal menu, with special options for this season.</h4>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card bg-warning mx-auto w-75">
+							<div class="card-body text-center">
+								<h4 class="card-text">The Drink of the Month is SG Special Brew.</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<article class="container">
+				<div class="row">
+					<div class="col" id="image">
+						<img src="images/burgerCastle.jpg" alt="Example Order" width="320x" height="213px"
+						style="display:block; margin-left: auto; margin-right: auto;"/>
+					</div>
+				</div>
+				
+				<div class="row">
+					<article class="col" id="description">
+						<h3> Restaurant Description </h3>
+						<p>
+							Burger Castle is a top of the line American restaurant that provides high quality service. In addition to our
+							unsurpassable food and service, we also provide a full service bar, a lounge area where you can enjoy the big game 
+							with your friends, catering services, and reservation services for private parties. 
+						</p>
+					</article>
+				</div>
 			</article>
 		</section>
-		
 		<footer>
 			<hr />
 			<p> 5555 Fake Road, Charlotte, North Carolina, 28105 </p>
 			<p> (704)-555-5555 </p> 
 		</footer>
+		
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</body>
 </html>
